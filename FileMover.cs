@@ -133,11 +133,14 @@ namespace GameBackup
 
 		public void Stop()
 		{
-			while(_copyLock)
-			{
-				Thread.Sleep(1);
-			}
-			_FileCopyTimer.Dispose();
+            if (_FileCopyTimer != null)
+            {
+                while (_copyLock)
+                {
+                    Thread.Sleep(1);
+                }
+                _FileCopyTimer.Dispose();
+            }
 		}
 
 		private static void ThrowIfNotExisting(string sourcePath)
