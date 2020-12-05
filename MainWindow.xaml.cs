@@ -105,6 +105,7 @@ namespace GameBackup
 		private void MessageReceived(string message)
 		{			
 			txt_Info.Dispatcher.Invoke(new Action(()=> txt_Info.Text += message + "\n"));
-		}
+            txt_Info.Dispatcher.Invoke(new Action(() => txt_Info.ScrollToEnd()));
+        }
 	}
 }
