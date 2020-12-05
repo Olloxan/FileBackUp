@@ -15,6 +15,5 @@
         <Button x:Name="btn_OpenFileSource" Content="..." HorizontalAlignment="Left" Margin="429,29,0,0" VerticalAlignment="Top" Width="75" Click="Btn_OpenFileSource_Click"/>
         <Button x:Name="btn_OpenFileDestination" Content="..." HorizontalAlignment="Left" Margin="429,81,0,0" VerticalAlignment="Top" Width="75" Click="Btn_OpenFileDestination_Click"/>
         <TextBox x:Name="txt_Info" HorizontalAlignment="Left" Height="257" Margin="99,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313" VerticalScrollBarVisibility="Auto"/>
-
     </Grid>
 </Window>

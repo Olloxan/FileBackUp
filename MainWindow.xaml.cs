@@ -71,7 +71,7 @@ namespace GameBackup
 
 		private void StartTimer()
 		{
-			_fileMover.InitFilemover(txt_FilePathSource.Text, txt_FilePathDestination.Text, 60000);
+			_fileMover.InitFilemover(txt_FilePathSource.Text, txt_FilePathDestination.Text, 1000);
 			_fileMover.Start();
 		}
 
